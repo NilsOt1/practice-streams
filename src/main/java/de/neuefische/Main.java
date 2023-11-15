@@ -24,6 +24,7 @@ public class Main {
 
         System.out.println(doubleEachNumber);
 
+
         //Sort the list in ascending order:
 
         List<Integer> ascendingOrderedList = listOfNumbers.stream()
@@ -32,11 +33,19 @@ public class Main {
 
         System.out.println(ascendingOrderedList);
 
+
         //Calculate the sum of all numbers in the list:
 
         int sum = listOfNumbers.stream()
                 .reduce(0, Integer::sum);
 
         System.out.println("Summe aller Zahlen: " + sum);
+
+
+        //Use forEach and output each processed number:
+
+        listOfNumbers.stream()
+                .map(number -> number * 2)
+                .forEach(System.out::println);
     }
 }
