@@ -32,6 +32,11 @@ public class Main {
 
         System.out.println(ascendingOrderedList);
 
+        //Calculate the sum of all numbers in the list:
 
+        int sum = listOfNumbers.stream()
+                .reduce(0, Integer::sum);
+
+        System.out.println("Summe aller Zahlen: " + sum);
     }
 }
