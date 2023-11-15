@@ -16,5 +16,14 @@ public class Main {
         System.out.println(evenNumbers);
 
 
+        //Double each number in the list:
+
+        List<Integer> doubleEachNumber = listOfNumbers.stream()
+                .map(number -> number * 2)
+                .collect(Collectors.toList());
+
+        System.out.println(doubleEachNumber);
+
+
     }
 }
