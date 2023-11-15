@@ -24,6 +24,14 @@ public class Main {
 
         System.out.println(doubleEachNumber);
 
+        //Sort the list in ascending order:
+
+        List<Integer> ascendingOrderedList = listOfNumbers.stream()
+                .sorted()
+                .collect(Collectors.toList());
+
+        System.out.println(ascendingOrderedList);
+
 
     }
 }
